@@ -31,7 +31,7 @@ const validBody = z.object({
 });
 
 mainRouter.post("/signup", async function (req, res) {
-    console.log("i am here");
+
     const validBodyCheck = validBody.safeParse(req.body);
     if (!validBodyCheck.success) {
         const errorMessages = validBodyCheck.error.issues[0].message;
