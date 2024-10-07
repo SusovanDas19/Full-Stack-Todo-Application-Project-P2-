@@ -200,8 +200,8 @@ mainRouter.get("/todos", userAuth, async function (req, res) {
 });
 
 mainRouter.patch("/todo/isDone", userAuth , async function (req, res) {
-    const userId = req.userId;  // Ensure this is set correctly in your authentication middleware
-    const {todoNo, done }  = req.body; // ID of the todo to be marked as done
+    const userId = req.userId;
+    const {todoNo, done }  = req.body; 
 
     try {
         const updatedTodo = await TodoModel.findOneAndUpdate(
@@ -209,8 +209,8 @@ mainRouter.patch("/todo/isDone", userAuth , async function (req, res) {
                 todoNo: todoNo,
                 userId: userId
             },
-            { done: done }, // Update the 'done' field to true
-            { new: true } // Return the updated document
+            { done: done }, 
+            { new: true } 
         );
 
         if (updatedTodo) {
