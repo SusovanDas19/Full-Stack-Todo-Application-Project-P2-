@@ -2,20 +2,20 @@
 
 A full-stack ToDo application that allows users to sign up, sign in, and manage their tasks. Users can add, modify, delete, and mark todos as done or not done. Each user has their own set of todos and requires authentication to manage them.
 
-## Features
+## Features📚
 
-- **User Authentication**: 
+- **User Authentication**🪧
   - Sign up for a new account.
   - Sign in with existing credentials.
   - JWT-based secure authentication.
 
-- **Todo Management**:
+- **Todo Management**📃
   - Add new todos.
   - Modify existing todos.
   - Delete todos.
   - Mark todos as done or not done.
 
-## Technology Stack
+## Technology Stack⚙️
 
 ### Backend
 - ![Express](https://img.shields.io/badge/Express.js-404D59?style=for-the-badge&logo=express&logoColor=white)  
@@ -44,3 +44,22 @@ A full-stack ToDo application that allows users to sign up, sign in, and manage 
 - ![CSS](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)
 - ![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)
 
+
+## Project Structure 🗃️
+
+```plaintext
+├── public               # Frontend files (HTML, CSS, JS)
+│   ├── auth.css         # Styles for authentication pages (signin, signup)
+│   ├── index.html       # Main HTML file
+│   ├── mediaquary.css   # CSS for responsive design
+│   ├── script.js        # Main JavaScript file for frontend functionality
+│   ├── signin.html      # HTML file for sign-in page
+│   ├── signup.html      # HTML file for sign-up page
+│   └── style.css        # Main styles for the application
+├── routes               # Backend routes
+│   └── main.js          # Backend routes handling todos and user actions
+├── .env.example         # Example of environment variables
+├── database.js          # MongoDB connection setup
+├── index.js             # Main entry point for the backend application
+├── package.json         # Project metadata and dependencies
+└── package-lock.json    # Lock file for npm dependencies
