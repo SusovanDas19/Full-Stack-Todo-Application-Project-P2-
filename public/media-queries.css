@@ -1,0 +1,201 @@
+@media screen and (max-width: 1420px) {
+    .main-part {
+        flex-direction: column;
+    }
+
+    .control-section,
+    #todos {
+        width: 100%;
+    }
+
+    #todos {
+        margin-left: 200px;
+    }
+    
+}
+
+@media screen and (max-width: 810px) {
+    .container {
+        margin: 0 20px 0 20px;
+    }
+
+    .heading {
+        justify-content: space-between;
+    }
+    .heading h1 {
+        margin: 50px auto 80px 20px;
+        font-size: 1.5em;
+    }
+    .logOut-front {
+        font-size: 1rem;
+        padding: 10px 17px;
+    }
+    .logOut-pushable {
+        margin-top: 40px;
+    }
+
+    .control-left {
+        max-width: 10%;
+    }
+
+    .control-right {
+        max-width: 90%;
+    }
+
+    .add-section label,
+    .modify-section label {
+        top: 45px;
+        left: 107px;
+    }
+
+    .control-left {
+        margin: 30px auto;
+        width: 100%;
+    }
+
+    .no-input {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .control-left label {
+        left: 25px;
+    }
+
+    .control-left input:focus~label,
+    .control-left input:valid~label {
+        left: 25px;
+    }
+}
+
+@media screen and (max-width: 656px) {
+    .control-left {
+        max-width: 20%;
+    }
+
+    .control-right {
+        max-width: 80%;
+    }
+
+    .add-section label,
+    .modify-section label {
+        top: 50px;
+        left: 50px;
+    }
+
+    .control-left label {
+        left: 45px;
+    }
+
+    .control-left input:focus~label,
+    .control-left input:valid~label {
+        left: 45px;
+    }
+
+}
+
+@media screen and (max-width: 450px) {
+
+    .heading {
+        flex-direction: column;
+        gap: 0px;
+    }
+    .heading h1 {
+        margin: 50px auto auto 20px;
+        font-size: 1.5em;
+    }
+    .logOut-front {
+        font-size: 0.9rem;
+        padding: 7px 12px;
+    }
+    .logOut-pushable {
+        margin-top: 15px;
+    }
+
+    .main-part{
+        margin-top: 20px;
+    }
+
+    .btn {
+        padding: 9px 9px;
+        font-size: 15px;
+        border-radius: 8px;
+        margin: 0;
+    }
+    
+    .control-left input{
+        width: 49px;
+        height: 65px;
+        font-size: 15px;
+        margin-bottom: 80px;
+
+    }
+    .control-right input {
+        width: 180px;
+        height: 45px;
+        margin: 10px;
+    }
+
+    .control-left label {
+        left: 22px;
+        top: 30px;
+    }
+    
+    .delete-section button{
+        margin-left: 70px;
+    }
+    .control-left input:focus~label,
+    .control-left input:valid~label {
+        left: 22px;
+    }
+
+    .add-section label,
+    .modify-section label {
+        left: 70px;
+        top: 35px;
+        font-size: 15px;
+    }
+
+    .add-section input:focus~label,
+    .add-section input:valid~label,
+    .modify-section input:focus~label,
+    .modify-section input:valid~label {
+        top: 10px;
+        font-size: 18px;
+    }
+    
+    #todos {
+        margin-left: 5px;
+    }
+
+    .control-left {
+        margin: 10px auto;
+        width: 100%;
+    }
+
+    #toastBox {
+        bottom: 10px;
+        right: 5px;
+        padding: 10px;
+    }
+
+    .toast {
+        width: 200px;
+        height: 40px;
+        font-weight: 500;
+        margin: 5px 0;
+    }
+
+    .toast-add i,
+    .toast-inv i, 
+    .toast-mod i,
+    .toast-del i {
+        font-size: 28px;
+    }
+
+    .new-task{
+        font-size: 20px;
+    }
+
+}

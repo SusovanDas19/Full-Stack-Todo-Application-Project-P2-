@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todo Application</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bungee+Tint&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css" rel="stylesheet" />
+    <link rel="stylesheet" href="./media-queries.css">
+</head>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.7.7/axios.min.js"></script>
+
+
+<body>
+    <!-- application name -->
+    <div class="heading container">
+        <h1>Add Your Todo</h1>
+        <button class="logOut-pushable" onclick="logout()" role="button">
+            <span class="logOut-shadow"></span>
+            <span class="logOut-edge"></span>
+            <span class="logOut-front text">
+                Log out
+            </span>
+        </button>
+    </div>
+
+    <div class="main-part container">
+        <!-- control-section  -->
+        <div class="control-section">
+
+            <!-- todo No input section -->
+            <div class="control-left">
+                <div class="no-input">
+                    <input type="text" required id="todo-no"></input>
+                    <label>No</label>
+                </div>
+            </div>
+
+            <!-- add-section -->
+            <div class="control-right">
+
+                <div class="add-section">
+                    <input type="text" required id="add"></input>
+                    <label>Add Task</label>
+                    <button onclick="addTodo()" class="btn addButton">Add</button>
+                </div>
+
+                <!-- Modify-section -->
+                <div class="modify-section">
+                    <input type="text" required id="modify"></input>
+                    <label>Edit Task</label>
+                    <button onclick="modifyTodo()" class="btn modifyButton">Edit</button>
+                </div>
+
+                <!-- Delete-section -->
+                <div class="delete-section">
+                    <button onclick="deleteTodo()" class="btn deleteButton">Delete</button>
+                </div>
+            </div>
+
+        </div>
+        <!-- new Todo-section -->
+        <div id="todos" class="container"></div>
+    </div>
+    <!-- toast-section -->
+    <div id="toastBox"></div>
+
+</body>
+<script src="./script.js"></script>
+
+</html>
