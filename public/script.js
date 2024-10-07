@@ -235,7 +235,7 @@ async function deleteTodo() {
 
 async function handleCheckboxChange(box) {
     try {
-        // Assuming you have the token stored in localStorage or any other storage
+        
         const token = localStorage.getItem("token");
         const todoNo = box.id;
         const done = box.checked;
